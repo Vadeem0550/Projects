@@ -1,0 +1,30 @@
+<div class="table-wrapper">
+<div class="table-header">
+  <div class="table-header__block">
+    <img src="/assets/img/filter.svg">
+
+    <div class="table-header__text">
+      Показатели
+    </div>
+  </div>
+    <div class="table-header__icon">
+      <img src="/assets/img/side.svg">
+    </div>
+  </div>
+  <div class="card-bar">
+    <div class="card-bar__word">Параметры</div>
+    <div class="card-bar__text">
+      <div class="card-bar__text1">Факт</div>
+      <div class="card-bar__text2">Модель</div>
+    </div>
+  </div>
+
+
+  <div class="table-container">
+
+    <div class="scroll-block"></div>
+    <app-card *ngFor="let item of data" (activeIdOutput)="activedId($event)"  [dataOne]="item"  [activedId]="activeId"></app-card >
+
+      </div>
+
+</div>

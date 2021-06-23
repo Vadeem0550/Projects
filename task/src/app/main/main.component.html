@@ -1,0 +1,24 @@
+<div>
+  <nav class="navbar">
+    <ul>
+      <li>
+        <button class="btn" routerLinkActive="active-btn" [routerLink]="['/main/chart']">1 Задание</button>
+      </li>
+      <li>
+        <button class="btn" routerLinkActive="active-btn" [routerLink]="['/main/table']">2 Задание</button>
+      </li>
+    </ul>
+    <div class="image" routerLinkActive="active">
+
+      <button class="but" (click)="auth.logout()">
+        <img src="/assets/img/login.svg" [routerLink]="['/login']">
+
+      </button>
+    </div>
+  </nav>
+  <div class="lgn">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
+

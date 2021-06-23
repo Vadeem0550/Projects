@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 604px;
+  height: 541px;
+  background-color: rgba(39, 42, 56, 0.5);
+  backdrop-filter: blur(7px);
+  border: 1px solid #0089FF;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 21px;
+  padding-left: 80px;
+  padding-top: 67px;
+  padding-bottom: 62px;
+}
+
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-right: 79px;
+  margin-bottom: 50px;
+}
+
+
+.form-field {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 79px;
+  padding-bottom: 21px;
+
+}
+
+.i {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  left: 4%;
+  top: 23.25%;
+  color: #8C99B2;
+
+  &--active {
+    color: #0089FF;
+  }
+}
+
+.user-icon {
+  color: #8C99B2;
+
+  &--active {
+    color: #0089FF;
+  }
+}
+
+input {
+  width: 445px;
+  height: 70px;
+  font-size: 18px;
+  padding-left: 63px;
+  color: #8C99B2;
+  background: #12151E;
+  border: 0;
+  border-radius: 2px;
+
+  &:focus {
+    background: rgba(0, 137, 255, 0.2);
+    outline: 0;
+    border: 1px solid #0089FF;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+
+  &.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+
+  &.ng-valid.ng-touched {
+    border: 1px solid #0089FF;
+  }
+}
+
+.password-icon {
+  position: absolute;
+  right: 20%;
+  top: 28%;
+  cursor: pointer;
+}
+
+button {
+  width: 445px;
+  height: 57px;
+  color: #D7E2F2;
+  font-size: 18px;
+  background: #303549;
+  outline: 0;
+  border: 1px solid #303549;
+  border-radius: 2px;
+  margin-top: 50px;
+
+  &:hover {
+    background: #0089FF;
+    outline: 0;
+    border: 1px solid #0089FF;
+    border-radius: 2px;
+    color: #FFF;
+
+  }
+
+  &:disabled,
+  button[disabled] {
+    border: 1px solid #303549;
+    background-color: #303549;
+    border-radius: 2px;
+    color: #D7E2F2;
+    cursor: pointer;
+  }
+
+}
+
+.icon {
+  border-right: 2px solid white;
+  padding-right: 17px;
+  margin-right: 17px;
+}
+
+.text {
+  line-height: 15px;
+  padding-top: 12px;
+  color: white;
+
+  span {
+    color: #0089FF;
+  }
+}
+
+.lgn {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #12151e;
+  color: #8C99B2;
+  background-image: url("./../../assets/img/back.svg");
+  background-position-y: 46%;
+  background-position-x: -30%;
+  background-repeat: no-repeat;
+  background-size: auto 155%;
+}

@@ -1,0 +1,68 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  padding: 12px;
+  background-color: #272A38;
+}
+
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+.btn {
+  background: #303549;
+  border-radius: 2px;
+  color: rgba(215, 226, 242, 1);
+  padding: 0.4rem 1.3rem;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  margin-right: 9px;
+
+  &:hover {
+    border-radius: 2px;
+    color: #FFF;
+  }
+}
+
+.active-btn {
+  background: #0089FF;
+  color: #FFF;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  border-left: 2px solid #12151e;
+  padding-left: 18px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.but {
+  cursor: pointer;
+  background:  #272A38;
+  border-radius: 2px;
+  border: none;
+}
+
+
+.lgn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93vh;
+  overflow: hidden;
+  background-color: #12151e;
+  color: #8C99B2;
+  background-position-y: 46%;
+  background-position-x: -30%;
+  background-repeat: no-repeat;
+  background-size: auto 155%;
+}

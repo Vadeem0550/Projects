@@ -1,0 +1,33 @@
+
+<div class="card-bar__card" >
+  <div class="card-container">
+    <div class="card-bar__header">
+            <div class="card-bar__icon"  (click)="onClick()">
+        <img src="assets/img/icon.svg"
+             [ngClass]="{
+             'card-bar__icon--style':active === true,
+             'card-bar__icon--no-style':active === false
+             }">
+      </div>
+      <div class="text" [class.text--style]="active">
+        <p>{{dataOne.name}}</p>
+      </div>
+    </div>
+    <div class="card-bar__footer">
+      <p> {{dataOne.defect}} </p>
+    </div>
+  </div>
+  <div *ngIf="active"  class="card-child__list">
+
+    <app-card-child
+
+      (activeIdOutput)="activeId($event)"
+      *ngFor="let item of dataOne.children"
+      [item]="item"
+    [activeId]="activedId">
+
+    </app-card-child>
+
+  </div>
+</div>
+

@@ -1,0 +1,16 @@
+.circle-plan-chart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-plan-chart__bg-layer {
+  position: absolute;
+  z-index: 1;
+}
+
+.circle-plan-chart__d3-layer {
+  position: absolute;
+  z-index: 2;
+}

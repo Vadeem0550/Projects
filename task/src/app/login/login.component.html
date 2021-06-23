@@ -1,0 +1,41 @@
+<div class="lgn">
+
+  <form class="container" [formGroup]="form" (ngSubmit)="submit()">
+
+
+    <div class="title">
+      <div class="icon">
+        <img src="/assets/img/gas.svg">
+      </div>
+
+      <div class="text">
+        <p><span>Цифровая</span></p><br>
+        <p>индустриальная экосистема</p>
+      </div>
+    </div>
+
+    <div class="form-fields">
+      <div class="form-field">
+        <i class="logo">
+          <svg-icon class="user-icon" [class.user-icon--active]="activeUser" src="/assets/img/log.svg"></svg-icon>
+        </i>
+
+        <input (focus)="activeUser=!activeUser" (focusout)="activeUser=!activeUser" type="text" placeholder="Логин"
+               formControlName="login">
+      </div>
+
+      <div class="form-field">
+        <i class="logo">
+          <svg-icon class="user-icon" [class.user-icon--active]="activePass" src="/assets/img/key.svg"></svg-icon>
+        </i>
+        <i *ngIf="visiblePassword" class="password-icon" (click)="togglePass()"> <img src="/assets/img/eye.svg"> </i>
+        <i *ngIf="!visiblePassword" class="password-icon" (click)="togglePass()"> <img src="/assets/img/no-eye.svg">
+        </i>
+        <input (focus)="activePass=!activePass" (focusout)="activePass=!activePass"
+               type="{{visiblePassword ?'text' : 'password'}}" placeholder="Пароль" formControlName="password">
+
+      </div>
+    </div>
+    <button class="action" (click)="auth.login()" [disabled]="form.invalid">Войти</button>
+  </form>
+</div>
